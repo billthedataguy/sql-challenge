@@ -26,8 +26,10 @@ DROP TABLE dept_emp;
 
 CREATE TABLE dept_emp (
 
-	emp_no INTEGER,
-	dept_no VARCHAR
+	dept_no VARCHAR,
+	emp_no INTEGER
+	PRIMARY KEY (dept_no, emp_no)
+	
 
 );
 
@@ -48,7 +50,9 @@ SELECT * FROM dept_emp;
 CREATE TABLE dept_manager (
 
 	dept_no VARCHAR,
-	emp_no INTEGER PRIMARY KEY
+	emp_no INTEGER,
+	PRIMARY KEY (dept_no, emp_no)
+
 
 );
 
@@ -115,45 +119,5 @@ CREATE TABLE titles (
 
 SELECT * FROM titles;
 
---------------------------------------------------
 
--- Quickdatabasediagrams.com 
--- # Modify this code to update the DB schema diagram.
--- # To reset the sample schema, replace everything with
--- # two dots ('..' - without quotes).
-
--- Departments
--- -
--- dept_no PK string
--- dept_name string
-
--- Dept_Emp
--- -
--- emp_no int
--- dept_no string
-
--- Dept_Manager
--- -
--- emp_no PK int
--- emp_title string
--- birth_date date
--- first_name string
--- last_name string
--- sex string
--- hire_date date
-
--- Employees
--- -
--- emp_no PK int
--- salary int
-
--- Salaries
--- -
--- emp_no PK int
--- salary int
-
--- Titles
--- -
--- title_id PK string
--- title string
 
