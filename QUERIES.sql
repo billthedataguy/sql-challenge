@@ -89,8 +89,8 @@ LEFT JOIN employees
 ON employees.emp_no=dept_emp.emp_no
 LEFT JOIN departments 
 ON departments.dept_no=dept_emp.dept_no
-WHERE (dept_emp.dept_no='d007' OR dept_emp.dept_no='d005') 				-- codes for Sales and Development
-ORDER BY departments.dept_name ASC, employees.last_name ASC, employees.first_name ASC;
+WHERE (departments.dept_name='Development' OR departments.dept_name='Sales' ) 				
+ORDER BY employees.last_name ASC, employees.first_name ASC;
 
 
 -------------------------------------------------------------------------------------------------------------
