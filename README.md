@@ -1,6 +1,6 @@
-# HW 9 William Vann 
+# sql-challenge 
 
-## sql-challenge
+## William Vann 
 
 **FILES**
 
