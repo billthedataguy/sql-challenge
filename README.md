@@ -2,6 +2,8 @@
 
 ## William Vann 
 
+## Demonstration of PostGreSQL creation and manipulation with Python.
+
 **FILES**
 
 1. ERD_diagram.png
